@@ -1,64 +1,64 @@
-.clientage__list {
+.clientage {
+  &__list {
     display: flex;
     margin-right: 30px;
   }
-  
-  .clientage__item {
+
+  &__item {
     margin-right: 30px;
   }
-  
-  .clientage__links {
+
+  &__links {
     transition: fill var(--animation-duration) var(--animation-timing),
       border-color var(--animation-duration) var(--animation-timing);
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
+
+    @extend %flex;
+
     margin: 0px;
     width: 170px;
     height: 92px;
-    border: 1px solid #afb1b8;
+    border: 1px solid var(--icon-color);
     border-radius: 4px;
     fill: var(--icon-color);
   }
-  
-  .clientage__links:last-child {
+
+  &__links:last-child {
     margin-right: 0px;
   }
-  
-  .clientage__links:hover,
-  .clientage__links:focus {
+
+  &__links:hover,
+  &__links:focus {
     border-color: var(--accent-color);
     fill: var(--accent-color);
   }
-  
-  .clientage__icon-client1 {
+
+  &__icon-client1 {
     width: 41px;
     height: 46.7px;
   }
-  
-  .clientage__icon-client2 {
+
+  &__icon-client2 {
     width: 40px;
     height: 52px;
   }
-  
-  .clientage__icon-client3 {
+
+  &__icon-client3 {
     width: 43.46px;
     height: 41.18px;
   }
-  
-  .clientage__icon-client4 {
+
+  &__icon-client4 {
     width: 84.44px;
     height: 40.62px;
   }
-  
-  .clientage__icon-client5 {
+
+  &__icon-client5 {
     width: 62.54px;
     height: 45.43px;
   }
-  
-  .clientage__icon-client6 {
+
+  &__icon-client6 {
     width: 93.79px;
     height: 43.93px;
   }
+}

@@ -2,27 +2,25 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background: var(--color-background);
-  }
   
-  .footer__container {
+  
+  &__container {
     display: flex;
     align-items: baseline;
   }
 
-  .footer__social {
+  &__social {
     margin-left: 70px;
   }
   
-  .footer__text {
+  &__text {    
+    @extend %primary-text;
+    
     margin-bottom: 20px;
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
     color: var(--secondary-text-color-theme-dark);
   }
   
-  .footer__links {
+  &__links {
     transition: background-color var(--animation-duration) var(--animation-timing);
   
     width: 44px;
@@ -36,11 +34,12 @@
     border-radius: 50%;
   }
   
-  .footer__links:hover,
-  .footer__links:focus {
+  &__links:hover,
+  &__links:focus {
     background-color: var(--accent-color);
   }
   
-  .footer__subscription {
+  &__subscription {
     margin-left: auto;
   }
+}

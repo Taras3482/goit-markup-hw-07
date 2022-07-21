@@ -1,4 +1,7 @@
-.list > .our-team__list {
+.our-team {
+  background: var(--portfolio-background);
+
+.list > &__list {
     margin-right: 30px;
     padding-top: 280;
     padding-bottom: 0;
@@ -7,33 +10,26 @@
     border-radius: 0px 0px 4px 4px;
   }
   
-  .list > .our-team__list:last-child {
+  .list > &__list:last-child {
     margin-right: 0px;
   }
+ 
   
-  .our-team {
-    background: var(--portfolio-background);
-  }
-  
-  .our-team__list {
+  &__list {
     background: var(--secondary-text-color-theme-dark);
   }
   
-  .our-team__title {
+  &__title {
+    @extend %team-text;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
+    
     color: var(--primary-text-color-theme-dark);
     margin-top: 30px;
     margin-bottom: 10px;
   }
   
-  .our-team__position {
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
+  &__position {
+    @extend %team-text;
     margin-bottom: 16px;
   }
+}

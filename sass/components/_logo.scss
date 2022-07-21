@@ -1,18 +1,18 @@
-  
-  .logo {
-    font-family: var(--secondary-font-family);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    color: var(--accent-color);
-  }
+.logo {
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;   
+  color: var(--accent-color);
 
-  .logo--color {
+
+&--color {
     color: var(--primary-text-color-theme-dark);
   }
-  
-  .logo--color-second {
+
+  &--color-second {
     color: var(--secondary-text-color-theme-dark);
   }
+}

@@ -1,11 +1,11 @@
-.header__nav {
-    display: flex;
-    /* flex-wrap:wrap; */
-    align-items: center;
+.header {
+  border-bottom: 1px solid var(--border-colors);
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+
+&__nav {
+  @extend %flex;    
   }
-  
-  .header {
-    border-bottom: 1px solid var(--border-colors);
-    padding-top: 24px;
-    padding-bottom: 25px;
-  }
+} 
+ 

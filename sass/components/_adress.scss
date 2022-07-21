@@ -1,41 +1,46 @@
 .address {
     margin-top: 20px;
     margin-left: 0px;
-  }
-  /* вставка з хедера */
-  .address__list {
+   
+  &__list {
     line-height: 1.71;
     letter-spacing: 0.03em;
     font-style: normal;
     padding: 0;
     list-style: none;
   }
-  
-  
-  .address__item {
+    
+  &__item {
     padding-right: 10px;
     margin-bottom: 9px;
   }
   
-  .address__item:last-child {
+  &__item:last-child {
     margin-bottom: 0px;
   }
-  
+}
+
   .adress__link {
     text-decoration: none;
     transition: color var(--animation-duration) var(--animation-timing);
     color: var(--secondary-text-color-theme-dark);
-  }
   
-  .adress__link:hover,
-  .adress__link:focus,
-  .adress__link--greycolor:hover,
-  .adress__link--greycolor:focus {
-    color: var(--accent-color);
-  }
   
-  .adress__link--greycolor {
+  &:hover,
+  &:focus
+  {color: var(--accent-color);}
+  
+  
+  &--greycolor {
     text-decoration: none;
     transition: color var(--animation-duration) var(--animation-timing);
     color: var(--list-link-color);
   }
+  
+  &--greycolor:hover,
+  &--greycolor:focus {
+    color: var(--accent-color);
+  }
+
+}
+  

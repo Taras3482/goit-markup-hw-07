@@ -1,50 +1,41 @@
 .contact {
     display: flex;
     margin-left: auto;
-  }
-  .contact__icon {
+  
+  &__icon {
     display: block;
     fill: currentColor;
+    margin-right: 10px;
   }
   
-  
-  
-  .contact__phone-number {
+    
+  &__phone-number {
     transition: color var(--animation-duration) var(--animation-timing);
   
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-  
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: inherit;
+    @extend %flex;
+    @extend %contact;
+   
   }
   
-  .contact__mail {
-    transition: color var(--animation-duration) var(--animation-timing);
-  
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-  
-    margin-right: 50px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: inherit;
-  }
-  
-  .contact__mail:hover,
-  .contact__mail:focus {
+  &__phone-number:hover,
+  &__phone-number:focus {
     color: var(--accent-color);
   }
+
+  &__mail {
+    transition: color var(--animation-duration) var(--animation-timing);
   
-  .contact__item {
-    display: flex;
+    @extend %flex; 
+    @extend %contact;  
+    
+    margin-right: 50px;
+    
   }
-  .shift {
-    display: block;
-    margin-left: 10px;
+  
+  &__mail:hover,
+  &__mail:focus {
+    color: var(--accent-color);
   }
+   
+}
+  
